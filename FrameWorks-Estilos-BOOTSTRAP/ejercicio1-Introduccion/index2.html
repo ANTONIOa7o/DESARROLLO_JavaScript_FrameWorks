@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion II</title>
+    <!--Inyectar desde la etiqueta link apetura/cierre otros recursos-->
+
+    <link rel="shortcut icon" href="images/boladelmundo.png" type="image/x-icon" />
+
+    <!--Cargas o inyecciones horizontales-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container" style="margin:0 auto; text-align: center;">
+        <h2>Botones y tarjetas</h2>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">Peligro</button>
+            <button type="button" class="btn btn-warning">Precaucion</button>
+            <button type="button" class="btn btn-success">Exito</button>
+            <button type="button" class="btn btn-primary">Principal</button>
+            <button type="button" class="btn btn-secondary">Secundario</button>
+            <button type="button" class="btn btn-info">Información</button>
+            <button type="button" class="btn btn-dark">Negro</button>
+            <button type="button" class="btn btn-light">Trasparente</button>
+            <button type="button" class="btn btn-link">Enlace</button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-danger">Peligro</button>
+            <button type="button" class="btn btn-outline-warning">Precaucion</button>
+            <button type="button" class="btn btn-outline-success">Exito</button>
+            <button type="button" class="btn btn-outline-primary">Principal</button>
+            <button type="button" class="btn btn-outline-secondary">Secundario</button>
+            <button type="button" class="btn btn-outline-info">Información</button>
+            <button type="button" class="btn btn-outline-dark">Negro</button>
+            <button type="button" class="btn btn-light">Trasparente</button>
+            <button type="button" class="btn btn-outline-link">Enlace</button>
+        </div>
+        <!--
+            Barra de navegacion
+            -->
+        <h2>Barra de Navegacion</h2>
+
+        <nav class=" navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/boladelmundo.png" width="30" height="30" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Proxima Apertura</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h2>Cards</h2>
+        <!--Clases a las imagenes
+            a.img-thumbnails
+            b.rounded-circle
+            c.rounded-pill
+            c.float-right/left/center
+        -->
+        <div class="card-group">
+            <div class="card">
+                <img src="https://picsum.photos//200/200?random=1" class="card-img-top img-thumbnails" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Titulo de tarjeta</h5>
+                    <p class="card-text">Los productos relacionados y asociados en esta categoria</p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            <strong>CFC Centro de Formacion Calderon</strong> <br />
+                            Virgen del LLuc 38 <br>
+                            28040 Madrid
+                        </small>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/300/300?random=2" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Contacta</h5>
+                    <p class="card-text">Atencion Personalizada </p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            <strong>Atencion al cliente</strong>
+                        </small>
+                        <a href="tel:+3462011090" > <abbr title="telefono"> <img src="images/logoWhatsaap.png" width="80px" alt=""></abbr></a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200/250?random=3" class="card-img-top rounded-pill " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Alquileres</h5>
+                    <p class="card-text">Novedades sobre ayudas a los jovenes segun art. 45 parrafo 36 BOCAM
+                    </p> 
+                     <a href="#" class="btn btn-outline-dark" target="_blank">Catalogo</a>
+                    <p class="card-text"><small class="text-muted">Actualizado</small>
+                  
+                    </p>
+                </div>
+            </div>
+        </div>
+<div class="" style="text-align: center; margin: 0 auto;">
+
+</div>
+    </div>
+</body>
+
+</html>
