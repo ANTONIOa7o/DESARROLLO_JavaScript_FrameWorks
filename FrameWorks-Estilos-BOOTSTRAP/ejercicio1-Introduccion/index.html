@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a bootstrap</title>
+    <!--
+        ** ⇓ inyecto aqui los recuros de bootstrap , dentro de la acotacion de la etiqueta head
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</head>
+<!--
+                ===================
+                    BOOTSTRAP
+                ===================
+
+        Defido en si mismo como un frameWork de estilos incluye una gran cantidad
+    de componentes (metodos(js) y clases(css)) que cubre grandes necesidades a los
+    diseñadores actuales.
+    Que necesidades:
+    1 Acesso a recursos de estilos ya definidos.
+    2. Responsive desing => A la visualizacion ordenada segun el dispositivo
+    Sitaxis de instalacion/inyeccion**
+-->
+
+<body>
+
+    <!--Simbolo de comentarios
+   * Dentro del body se produce la total visualizacion de lo que percibe el USUARIO
+   * Desde la url o path, ruta de nuestro proyecto
+   * el codigo por defecto es eficiente
+       -->
+    <div class="container">
+        <div>
+            <h2 class="display-3"> Los Encabezados</h2>
+            <h1>Encabezado 1</h1>
+            <h2>Encabezado 2</h2>
+            <h3>Encabezado 3</h3>
+            <h4>Encabezado 4</h4>
+            <h5>Encabezado 5</h5>
+        </div>
+        <div>
+            <h2 class="display-3"> Los Parrafos <small>Estica con:<cite>Bootstrap</cite></small></h2>
+            <!--Etiqueta conexion -->
+            <a href="https://www.google.es" class="bagde text-wrap "
+                style="text-decoration: none; color: black;">CONSULTA 💭</a>
+            <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, consectetur?
+                Provident eaque tempore beatae earum est vero blanditiis repellendus, sit sequi!
+                Omnis tenetur atque ipsam harum? Repudiandae maxime consectetur maiores?
+            </p>
+            <p class="lead text-danger">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, consectetur?
+                Provident eaque tempore beatae earum est vero blanditiis repellendus, sit sequi!
+                Omnis tenetur atque ipsam harum? Repudiandae maxime consectetur maiores?
+            </p>
+            <p class="text-left text-muted ">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, consectetur?
+                Provident eaque tempore beatae earum est vero blanditiis repellendus, sit sequi!
+                Omnis tenetur atque ipsam harum? Repudiandae maxime consectetur maiores?
+            </p>
+            <p class="text-right text-primary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, consectetur?
+                Provident eaque tempore beatae earum est vero blanditiis repellendus, sit sequi!
+                Omnis tenetur atque ipsam harum? Repudiandae maxime consectetur maiores?
+            </p>
+            <p class="text-center text-info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, consectetur?
+                Provident eaque tempore beatae earum est vero blanditiis repellendus, sit sequi!
+                Omnis tenetur atque ipsam harum? Repudiandae maxime consectetur maiores?
+            </p>
+            <p class="text-warning lh-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, consectetur?
+                Provident eaque tempore beatae earum est vero blanditiis repellendus, sit sequi!
+                Omnis tenetur atque ipsam harum? Repudiandae maxime consectetur maiores?
+            </p>
+            <p class="lead lh-lg text-danger">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, consectetur?
+                Provident eaque tempore beatae earum est vero blanditiis repellendus, sit sequi!
+                Omnis tenetur atque ipsam harum? Repudiandae maxime consectetur maiores?
+            </p>
+        </div>
+        <div class="" >
+            <h2 class="display-3"> Las Lista <small>Estetica Bootstrap</small></h2>
+            <!--Anidaciones de estructura-->
+            <ul class="">
+                <li>item A
+                    <ol>
+                        <li>item A
+                            <ol>
+                                <li>A.1</li>
+                                <li>A.2</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+            <ol class="">
+                <li>item</li>
+                <li>item</li>
+                <li>item C
+                    <ul>
+                        <li>C.1</li>
+                        <li>C.2
+                            <ul>
+                                <li>C.2.1</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <ul class="list-inline">
+                <li class=" list-inline-item list-group-item list-group-item-success">item</li>
+                <li class="list-inline-item">item</li>
+                <li class="list-inline-item">item</li>
+
+            </ul>
+        </div>
+        <div class="container">
+            <h2 class="display-3"> Las Tablas <small>Estetica Bootstrap</small></h2>
+
+            <table class="table table-striped">
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                    <th>Encabezado 3</th>
+                </tr>
+                <tr>
+                    <td>dato 1</td>
+                    <td>dato 2 </td>
+                    <td>dato 3</td>
+                </tr>
+                <tr>
+                    <td>dato 1</td>
+                    <td>dato 2 </td>
+                    <td>dato 3</td>
+                </tr>
+                <tr>
+                    <td>dato 1</td>
+                    <td>dato 2 </td>
+                    <td>dato 3</td>
+                </tr>
+                <tr>
+                    <td>dato 1</td>
+                    <td>dato 2 </td>
+                    <td>dato 3</td>
+                </tr>
+            </table>
+
+            <table class="table table-hover table-bordered table-dark">
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                    <th>Encabezado 3</th>
+                </tr>
+                <tr class="table-success">
+                    <td>dato 1</td>
+                    <td>dato 2 </td>
+                    <td>dato 3</td>
+                </tr>
+                <tr>
+                    <td>dato 1</td>
+                    <td>dato 2 </td>
+                    <td>dato 3</td>
+                </tr>
+                <tr class="table-warning">
+                    <td>dato 1</td>
+                    <td>dato 2 </td>
+                    <td>dato 3</td>
+                </tr>
+                <tr>
+                    <td>dato 1</td>
+                    <td>dato 2 </td>
+                    <td>dato 3</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
