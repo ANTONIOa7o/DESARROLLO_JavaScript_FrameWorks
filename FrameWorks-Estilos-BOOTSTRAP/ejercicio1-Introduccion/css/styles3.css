@@ -1,0 +1,10 @@
+.fondo {
+    font-size: larger;
+    font-weight: bold;
+    /*Fondo  background-color:#6f42c1;*/
+    color: black;
+}
+
+.imagen {
+    background-image: url();
+}
