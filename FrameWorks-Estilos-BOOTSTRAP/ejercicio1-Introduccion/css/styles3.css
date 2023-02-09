@@ -1,10 +1,21 @@
+
+/*Asociado a las tipicas barras de navegacion pegajosas, necesitamos
+dejar un espacion dentro del body, ed. utilizaremos el padding
+*/
+body{
+    padding-top: 70px;
+}
 .fondo {
     font-size: larger;
-    font-weight: bold;
+    
     /*Fondo  background-color:#6f42c1;*/
     color: black;
 }
 
 .imagen {
-    background-image: url();
+    
+/*     background-image: url(https://i2.wp.com/www.webdisenia.com/wp-content/uploads/2015/03/002.png); fondo enlace externo*/
+background-image: url(../images/bootstrap2.png.png);/*Imagen inyectada de manera local*/
+    background-repeat: no-repeat;
+    background-position: center;
 }
