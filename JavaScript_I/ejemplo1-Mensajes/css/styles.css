@@ -1,0 +1,28 @@
+/*
+Efectos báscios del sweetalert
+a.fondo [overlay]
+b.ventana [modal]
+c.footer [footer]
+*/
+
+.swal-overlay{
+    background-color: gray;
+}
+.swal-modal{
+    border: 2px solid green;
+    box-shadow: 2px 2px 3px grey;
+}
+.swal-footer{
+    background-color: violet;
+    margin: 0 auto;
+    border-top: 23 px solid green;
+}
+/*a la etiqueta*/
+h3{
+    text-align: center;
+    color: coral;
+    text-shadow: 2px 2px 3px grey;
+    font-size: larger;
+}
+
+
