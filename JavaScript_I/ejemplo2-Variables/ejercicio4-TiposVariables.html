@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Variables</title>
+</head>
+
+<body>
+    <!--
+                            ==================
+                            TIPOS DE VARAIBLES
+                            ==================
+            1. String -> Cadena de texto(caracteres)
+                a. Sintaxis, entre comillas simples o dobles
+                b. comillas simples, dentro de ellas comillas dobles, y viceversa
+            2. Number -> Valores números
+                a. Guarda indistintamente en una variable, cualquier realidad de los
+                numeros reales.
+                b. Soporta 3 bases numericos. Por defecto Decimal(10), base octal (base 8),
+                base Hexadecimal (16)
+                    ** Identificamos las bases como;
+                        -Hexadecimal precedida de 0 y simbolo x, ed. ejemplo 0x2345
+                        -Octal  precedida de 0 , ed. ejemplo 02345
+            3.Boolean (Buleano)->variable logicas
+                a.valores true, false
+                b. minuscula
+                c. Necesidad de ofrecer vinculacione y comparaciones
+                d Equivalencia, false=0 y true = 1 o distindo de  = 0;
+            
+            4. Object -> Objetos
+
+            5. Undefined -> Existe una variable pero no encuentra su valor
+                var hola;
+                hola = 6
+                console.log(hola);
+            
+            6. Null -> No existe (elemento, objeto, variable) -no lo encuentra (ambito) - no lo comprende (sintaxis)
+
+            7. NaN -> No comprende el valor numerico. Acceder a la variable, no traduce el valor a numerico
+      🔑  Conclusion:
+            Tres valoreciones a la hora de configurar, determinarlas o definir las variables:
+                a. Nombre de la variable (Miniscula)
+                b. tipo de variable (numerica, buleana, string....)
+                c. Valor asignado
+                    Exhativamente:
+                        i. Apareceran variables estarán definidas y tipadas pero sin valor
+                            ejemplo: var loco = "";(variables eje)
+
+                        ii. Principalmente el valor suele asignar de manera predeterminada su tipo
+                            ejemplo:
+                                    var loca = 0; (variables residuales)
+    -->
+    <script>
+        var texto = 'JavaScript';
+        var numero = 7.8;
+        var buleana = true;
+        var fecha = new Date();//Alfil o referencia para entender los objetos
+        var anulado = null;
+        var indefinida;
+
+        /*
+        Tipico metodo de rastreo de las variables typeof(),
+        devolverá una cadena que indicará el tipo de variable que opera, sin evaluarla
+        
+        */                                                             //metodo ⇓ (parámetros/variable)
+        document.write('<h3> var Texto: </h3>' + texto + 'es un tipo de varaible: ' + typeof (texto) + '<br>');
+        document.write('<h3> var numero: ' + numero + ' es un tipo de varaible: ' + typeof (numero) + '<br>');
+        document.write('<h3> var buleana: ' + buleana + ' es un tipo de varaible: ' + typeof (buleana) + '<br>');
+        document.write('<h3> var fecha: ' + fecha + ' es un tipo de varaible: ' + typeof (fecha) + '<br>');
+        document.write('<h3> var anulado: ' + anulado + ' es un tipo de varaible: ' + typeof (anulado) + '<br>');
+        document.write('<h3> var indefinida: <h3>' + indefinida+ ' es un tipo de varaible: ' + typeof (indefinida) + '<br>');
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+</head>
+<body>
+    <h2>Practica & Algoritmos</h2>
+    <label> Usuario introduce dos numeros</label>
+    <ul>
+        <li>Calcule la suma y resta de ambos numeros</li>
+        <li>Calcule división y multiplicacion</li>
+        <li>Muestre las sumas por console</li>
+        <li>Producto por alert</li>
+        <li>Muestre resta y divison en el navegador</li>
+    </ul>
+    <script>
+        var num1 = parseFloat(window.prompt('Introduce un numero'));
+var num2 = parseFloat(window.prompt('Introduce otro numero'));
+
+var suma = num1 + num2;
+var resta = num1 - num2;
+var division = num1 / num2;
+var multiplicacion = num1 * num2;
+
+console.log(num1 + ' + ' + num2 + ' = '+ suma);
+alert(num1 + '*' + num2 + ' = ' + multiplicacion);
+document.write(num1 + ' - ' + num2 + ' = ' + resta + '<br/>');
+document.write(num1 + '/' + num2 + ' = ' + division)
+    </script>
+</body>
+</html>
