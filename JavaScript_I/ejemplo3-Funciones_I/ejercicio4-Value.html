@@ -13,13 +13,14 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="js/script4.js"></script>
+    <link rel="stylesheet" href="css/styles4.css">
 </head>
 
 <body>
     <div class="container" style="margin: 0 auto; text-align: center; width: 32rem;">
         <h3>Interrelacion entre el Formulario y las Variables- <code>.value</code></h3>
         <hr>
-        <form action="" method="get" style="width: 12rem; margin: 0 auto; text-align: center;">
+        <form action="" method="get" style="width: 16rem; margin: 0 auto; text-align: center;">
             <div>
                 <label class="form-label" for="">Nombre</label>
                 <input class="form-control" type="text" id="nombre">
@@ -33,8 +34,8 @@
                 <input class="form-control" type="email" id="email">
             </div>
             <span class="form-text">Rellena todos los campos</span><br><br>
-            <!--Camuflar un boton, por etiqueta <input/>-->
-            <input type="button" class="btn btn-outline-dark" value="Acceder" /><br><br>
+            <!--Camuflar un boton, por etiqueta <input/> el boton desencadenante-->
+            <input type="button" class="btn btn-outline-dark" value="Acceder" onclick="autorizacion()" /><br><br>
 
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
@@ -46,14 +47,17 @@
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body" id="resultado"> <code> <strong>Resultado</strong></code>
+                        <div class="accordion-body" id="resultado"> 
+                            <code> <strong>Resultado</strong></code>
                         </div>
                     </div>
                 </div>
             </div>
         </form>
-        <div id="resultado"></div>
+       <!--  <div id="resultado"></div> Reflexionando!!!-->
+      
     </div>
+    <script src="js/script4.js"></script>
 </body>
 
 </html>
