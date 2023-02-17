@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a las Estructuras de Control</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>   
+</head>
+<body>
+    <!--
+                            ======================
+                            ESTRUCTURAS DE CONTROL
+                            ======================
+                Como estructuras, tiene configuración asignada, con la finalidad principal
+                que nos permita tomar decisiones en funcion de determinadas condiciones que
+                inicialmente se hayan impuesto, seguidamente originando la ejecucion de uno
+                u otro codigo, sentencia......
+                Tipos de estructuras:
+                1. if else (Condicion)
+                2. switch case (posibilidades)
+                3. for (recorridos)
+                    3.1 for in
+                    3.2 for of
+                    3.3 for each
+                        3.3.1 funcion arrow =>
+                4. while
+                5. Do while
+
+        1. IF ELSE
+
+            Sintaxis:
+            if(condicion =true){
+                [ejecucion de sentencias.... solamente si la condicion principal es TRUE]
+            }else{
+                [sencicia 2 ......, ejecuta cuando la sentencia principal es FALSE]
+            }
+        Se comprobará la validez o falsedad de una condicion. primer codigo se ejecuta si es true
+        y si es false se ejecuta el siguiente codigo (else)
+    -->
+    <script>
+var numero = 3;
+
+if (numero >= 5) {//Evaluacion la variable con la condicion
+    swal('Numero es mayor o igual que 5');
+} else {
+    swal('Numero es menor que 5');
+}
+
+//Anidaciones de estructura: De uso principal cuando no comparas las condiciones sino las variables
+
+var numero2 =4;
+
+if(numero >=5){
+    swal('Numero es mayor o igual que 5');
+}else if (numero2>=5) {// no es nada mas, que poder alargar es estructura de control añadiendo variable
+    swal('Numero2 es mayor o igual que 5');
+}else{
+    swal('Ambos son menores que 5')
+}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrarlos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="container" style="margin: 0 auto; text-align: center;margin-top: 32px;">
+        <button type="button" class="btn btn-info" onclick="buscarPares()">Buscar Pares</button>
+    </div>
+
+
+    <script>
+        function buscarPares() {
+            var numero = parseInt(window.prompt('Introduce nº para saber si es par o impar:'));
+            /*   var numero = parseInt(document.getElementById('numero').value);
+                 var numero = parseInt(numero.value);      
+            fORMULARIO */
+            if (numero % 2 == 0) {
+                swal('El numero es: ' + numero + ' es PAR');
+            } else {
+                swal('El numero es: ' + numero + ' es IMPAR');
+            }
+
+        }
+    </script>
+</body>
+
+</html>

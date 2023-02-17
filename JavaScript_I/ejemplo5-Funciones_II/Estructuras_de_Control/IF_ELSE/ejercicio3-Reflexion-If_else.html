@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexionando sobre el if else</title>
+</head>
+
+<body>
+    <script>
+        var condicion = 15;
+        if (condicion >= 0 && condicion <=10) {//Crear intervalos
+                document.write('Evento UNO');
+        } else if (condicion >10 && condicion <=20) {
+                document.write('Evento DOS')
+        } else{
+                document.write('Evento TRES');
+        }
+
+        //
+        var nombre ='Fernando';
+        var nombre2 ='Luisa';
+        //Que condiciones puedo establecer para que salga solo por document.writet Luisa 
+        if ( nombre != nombre2) {//Filtrar excepciones
+            document.write(nombre);
+        } else {
+            document.write(nombre2);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos, relacioneales y Aritmeticos</title>
+</head>
+
+<body>
+    <!--
+
+        Encontramos 3 tipos de Operadores Principales:
+    
+    A] OPERADORES LÓGICOS(Sentencias)
+        Conjunto de Caracteres reservados para establecer sentencias verdaderas o falsas
+    
+        Operador                Simbolo                     Descripcion
+
+        Copulativas(Y)              &&                      Considera true, cuando ambas sentecias sean True, 
+                                                            falseará toda la sentecia aquer sólo se falsee una 
+                                                            de las partes de dicha sentencia
+        
+        Adversativas (Ô)            ||                      Considera la estructura de sentecias como true, si alguna de las misma
+                                                            es verdadera
+
+        Inversa (Negacion)          !                       Invertir el sentido logico de la sentencia,ed:
+                                                            Devolverá el valor contrario de la sentecia
+
+     B] OPERADORES RELACIONALES(Variables)
+       Conjunto de Caracteres reservados para establecer sentencias de comparación
+
+       Operador                 Simbolo                     Descripcion
+
+       Asignacion                   =                           Asignacion incial de valor
+
+       igual a:                    ==                          igualdad entre elemento comparados
+
+       distinto/no igual a.        !=                           Contrario/inverso al elemento comparado
+
+       Mayor, mayor e igual         >, >=                       Comparaciones de cantidad, mayor o menor que
+       Menor,menor e igual          <, <=                       Asi, como mayor e igual o menor e igual
+
+        Igualdad estricta           ===                         La igualdad de toda la naturaleza de la variable, 
+        var numero = '8'                                        tanto a su valor como a su tipo 
+        var numero2 = 8
+        var numero3 =''
+
+        Inversa de iguladad estricta !==                        Inversion del sentido logico de su igualdad, contrario a igualdad estricta
+    
+    C]  OPERADORES ARITMETICOS
+
+        Operador                Simbolo                     Descriptcion
+
+        Suma y resta            +,-
+        Multiplicacion          *
+        Division                /
+        Incremento              ++                          incrementa una unidad
+        Decremento              --                          decrementa una unidad
+        Division entera         /
+        Resto de la divison     %                           solucion de la divison del resto
+
+    -->
+
+    <script>
+        var numero = 7;
+
+        console.log('Igualdad: ' + (numero == 7));
+        console.log('Desigualdad: ' + (numero != 7));
+        console.log('Mayor: ' + (numero >= 7));
+        console.log('Menor: ' + (numero < 7));
+        console.log('Menor o igual: ' + (numero <= 10));
+        console.log('Mayor o igual: ' + (numero >= 10));
+        //Igualdad estricta
+
+        console.log('Igualdad: ' + (numero == '7'));
+        console.log('Igualdad Estricta: ' + (numero === '7'));
+
+        //Operadores Lógicos
+
+        var nombre1 =  'Juan';
+        var nombre2 = 'Pepa'; 
+
+
+        console.log('Condicion Y: ' + ((nombre1 =='Juan')&&(nombre2=='Pepaaaaa')));//Conclusión al ser una de las sentencias
+                                                                                    //false, falsea toda la estructura
+        console.log('Condicion Ó: ' + ((nombre1 =='Juan')||(nombre2=='Pepaaaaa')));   // falsas todoa la estrutura es considerada false
+
+        console.log('Negación 2º sentencia: ' + (!(nombre2=='Pepaaaaa')));
+        console.log('Negación 1º sentencia: ' + ((nombre1 !='Juannnn')&&(nombre2=='Pepa')));
+                                                                         
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de asignacion Simple y compuesta</title>
+</head>
+<body>
+    <!--
+                                ===============================
+                                OPERADORES SIMPLES & COMPUESTOS
+                                ===============================
+                
+                Descripcion operacion                       Operador
+
+                  Asignacion directa                          = (simple)
+              🎯 Adición                                     +=
+                  Sustraccion                                 -=
+                  Multiplicacion                              *=
+                  Division                                    /=
+                  Resto (valor del resto)                     %=
+                  
+                                                             dividendo /divisor   
+                                                              resto     cociente
+        resto: Resultado de la división siendo el nº que 'nos queda' como resultado de una división
+        resto extacto == 0; no es resto extacto distinto de (!=) 0;
+    -->
+    <script>
+        //Asignacion simple
+        var numero = 5;
+        
+        numero= numero + 3;
+        console.log(numero)
+        //Asginacion Compuesto
+        numero+=3;
+        console.log(numero)
+        numero=numero*6;
+        console.log(numero)
+
+        numero*=6;
+        console.log(numero)
+
+        numero = numero/9
+        numero /=9;
+        console.log(numero)
+        numero= numero-2
+        console.log(numero)
+        numero -=2;
+        console.log(numero);
+
+        //Porque sale 0.88  ....?
+
+
+
+
+
+    </script>
+</body>
+</html>
