@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de un Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!--ccs validaciones, ajustes globales y puntuales-->
+    <link rel="stylesheet" href="css/validaciones.css">
+    <!--Enlace con google de material-icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+</head>
+
+<body>
+    <form action="" class="formulario-login" method="get">
+        <div class="text-center mb-4">
+            <span class="material-icons">
+                account_circle
+            </span>
+
+            <h3 class="h3 mb-3 font-weight-normal">FORMULARIO</h3>
+            <p>
+                Construccion de un Formulario, validado partiendo del floating label. <br>
+                Enlazaremos el evento: <strong>enviar</strong>, a dos funciones, con la directiva
+                <code>addEventListener</code> Metodo
+            </p>
+        </div>
+        <div class="row form-label">
+            <div class="col-sm-6 ">
+                <input type="text" class="form-control" id="inputNombre" name="" placeholder="Nombre" aria-label="Nombre">
+            </div>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="inputApellidos" name="" placeholder="Apellidos" aria-label="Apellidos">
+            </div>
+        </div>
+        <div class="row form-label">
+            <div class="col-sm-8 ">
+                <input type="text" class="form-control" id="inputDireccion" name="" placeholder="Introducir Direccion"
+                    aria-label="Introducir Direccion">
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="inputCp" name="" placeholder="C.P." aria-label="Codigo Postal">
+            </div>
+        </div>
+        <div class="row form-label">
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="inputTelefono" name="" placeholder="Telefono" aria-label="Telefono">
+            </div>
+            <div class="col-sm-6">
+                <input type="email" class="form-control" id="inputEmail" name="" placeholder="e-mail" aria-label="e-mail">
+            </div>
+        </div>
+        <div class="row form-label">
+            <div class="col-sm-3 ">
+                <input type="text" class="form-control" id="inputEdad" name="" placeholder="Edad" aria-label="Edad">
+            </div>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputDni" name="" placeholder="DNI" aria-label="DNI">
+            </div>
+        </div>
+        <select class="form-select form-label" name="" id="inputSexo">
+            <option selected> Selecciona Género</option>
+            <option value="1">Hombre</option>
+            <option value="2">Mujer</option>
+            <option value="3">Transgenero</option>
+        </select>
+        <div class="form-label">
+            <input type="file" class="btn btn-outline-primary" id="" value="curriculum"
+                placeholder="Adjuntar Curriculum">
+        </div>
+        <div class="form-label">
+            <label for="">
+                <input type="checkbox" id="" value="aceptar">Aceptar las condiciones de privacidad
+            </label>
+        </div>
+        <div style="text-align: center; margin: 0 auto;">
+            <input style="margin: 0px 32px 0px 0px;" type="reset" class="btn btn-outline-secondary" id="" value="Limpiar">
+            <!--
+             Reflexion:   type='submit' vs 'button' este primero tendrá mision principal de boton de envio de datos, y configura con el method='get/post'
+            -->
+            <input type="submit" class="btn btn-outline-primary" id="enviar" onclick="exito()" value="enviar">
+        </div> <br>
+
+        <div style="margin: 0 auto;text-align: center;">
+            <a href="" target="_blank" class="btn btn-outline-dark">Otras validaciones</a>
+        </div><br>
+
+        <p class="text-muted text-center mb-3"> @Formacion CfC S.L &copy; 2023-2024</p>
+    </form>
+    <script src="js/validacion.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
