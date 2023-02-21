@@ -27,7 +27,7 @@ function calcular() {
     } else {
         respuesta.innerHTML = 'Obesidad o/y trastorno 🐷'
     }
-
+   
 
 }
 function limpiar() {//limpia campos y en este caso no admite el borrado del campo id='resultado' ojo!! data-bs-dismiss="modal"

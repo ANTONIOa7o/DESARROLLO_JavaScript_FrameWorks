@@ -100,7 +100,7 @@ function mostrarError(id){
     /*
     Metodos de llamada desde javaScript a Css, precissamente con el interes de mostrar cambios perceptivos al usuario desde error hasta exito
     */
-   document.getElementById(id).classList.add('is-invalid');//Podemos añadir classes de otros frameWork (ej: is-invalid)
+   document.getElementById(id).classList.add('warning');//Podemos añadir classes de otros frameWork (ej: is-invalid)
    /*
    mensaje al usuario
    */
