@@ -1,0 +1,43 @@
+.centrado{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20rem 0;
+}
+
+#reloj{
+
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Heebo',cursive;
+    color: black;
+    font-weight: 100px;
+}
+
+#hoy{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Heebo',cursive;
+    font-weight: 400;
+
+}
+/*
+Acotador de visualizacion
+*/
+@media (max-width: 900px) {/*Acota el limite de visualizacion*/
+    #reloj{
+        font-size: 36px;
+    }
+    #hoy{
+        font-size: 1rem;
+    }
+}
+ @media (min-width: 900px) {/*Limite para la visualizacion*/
+    #reloj{
+        font-size: 8rem;
+    }
+    #hoy{
+        font-size: 2rem;
+    }
+ }

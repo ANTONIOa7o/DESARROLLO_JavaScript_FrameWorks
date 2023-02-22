@@ -1,0 +1,8 @@
+.pantalla{
+    color: #adff2f;
+    background-color: black;
+    font-family: 'Nova Mono',cursive;
+    border-right: gainsboro solid 12px;
+    width: 360px;
+    height: 140px;
+}
