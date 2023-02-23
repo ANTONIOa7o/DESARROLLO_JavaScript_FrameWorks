@@ -1,0 +1,10 @@
+hr{
+    width: 60%;
+    height: 2px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+#resultado{
+    height: 280px;
+}
